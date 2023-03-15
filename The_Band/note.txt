@@ -1,0 +1,19 @@
+
+------------Lịch--------------------
+- Trước khi xem video hình dung theo ý hiểu của mình sẽ vẽ thế nào
+- Mỗi buổi tối: Xem video 1 tiếng, code 2 tiếng
+
+-------Phân tích----------
+1. header
+2. Slider
+3.Content
+- about
+- tour
+-contact
+-img
+4.Footer
+
+---- --------------Dựng móng ( dựng bộ khung)---------
+- Layout dùng các thuộc tính position
+
+------- header------
