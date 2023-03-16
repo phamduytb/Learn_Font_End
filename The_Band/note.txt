@@ -1,7 +1,6 @@
 
 ------------Lịch--------------------
-- Trước khi xem video hình dung theo ý hiểu của mình sẽ vẽ thế nào
-- Mỗi buổi tối: Xem video 1 tiếng, code 2 tiếng
+
 
 -------Phân tích----------
 1. header
