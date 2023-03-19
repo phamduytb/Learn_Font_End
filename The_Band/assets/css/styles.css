@@ -25,6 +25,8 @@ h1, h2, h3, h4, h5, h6 {
     height: 100vh; */
 }
 
+/* Start header */
+
 .header {
     width: 100%;
     height: 46px;
@@ -114,6 +116,9 @@ h1, h2, h3, h4, h5, h6 {
     cursor: pointer;
 }
 
+/* End header */
+
+/* start slider */
 .slider {
     /* padding-top: 50% để chiều cao luôn bằng nửa chiều rộng */
     padding-top: 50%;
@@ -137,8 +142,12 @@ h1, h2, h3, h4, h5, h6 {
     font-weight: 400px;
 }
 
+/* End slider */
+
+/* start content */
+
 .content {
-    /* text-align: center; */
+    
 }
 
 .content-section {
@@ -166,6 +175,7 @@ h1, h2, h3, h4, h5, h6 {
     opacity: 0.5;
 }
 
+/*   about content */
 .content-about__detail {
     margin: 15px 0px;
     text-align: justify;
@@ -187,7 +197,7 @@ h1, h2, h3, h4, h5, h6 {
     width: 154px;
 }
 
-/* ----------tour---------- */
+/* ---------- content tour---------- */
 .content-tour {
     background-color: #000;
     
@@ -286,6 +296,115 @@ h1, h2, h3, h4, h5, h6 {
     color: #000;
 }
 
+
+
 .footer {
     
+}
+
+.modal {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0,0,0,0.3);
+    
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    /* display: none; */
+}
+
+.modal-container {
+    width: 900px;
+    min-height: 200px;
+    max-width: calc(100% - 32px);
+    background-color: #fff;
+    position: relative;
+}
+
+.icon-close {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 16px 16px;
+    cursor: pointer;
+}
+
+.icon-close:hover {
+    background-color: #ccc;
+    color: #000;
+}
+
+.modal-header {
+    padding: 48px 16px;
+    background-color: #009688;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px
+}
+
+.modal-header  .ti-bag {
+   margin-right: 16px;
+   font-size: 24px;
+}
+
+.modal-content {
+    padding: 0px 16px;
+    color: #000;
+}
+
+.modal-content .label {
+    margin: 15px 0;
+    line-height: 1.5;
+}
+
+.email-ticket {
+
+}
+
+.modal-content i {
+    font-weight: 800;
+}
+
+.modal-input {
+    padding: 10px 8px;
+    border: 1px solid #ccc;
+    width: 100%;
+    border-radius: 4px;
+    font-size: 15px;
+}
+
+.modal-content .btn-pay {
+    width: 100%;
+    padding: 18px 16px ;
+    margin: 16px 0;
+    background-color: #009688;
+    color: #fff;
+    border: unset;
+    cursor: pointer;
+}
+
+.modal-content .btn-pay:hover {
+    background-color: #ccc;
+}
+
+.btn-pay .ti-check {
+    font-weight: 600;
+}
+
+
+.modal-footer {
+    padding: 0 16px;
+    margin: 15px 0;
+    color: #000;
+    
+    float: right;
+}
+
+.modal-footer a {
+    cursor: pointer;
+    color: #2196F3;
 }

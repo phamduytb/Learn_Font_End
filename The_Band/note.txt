@@ -1,6 +1,8 @@
 
 ------------Lịch--------------------
 
+----------Câu hỏi------------
+- Cần phân biệt rõ hơn: inline, block, inline-block
 
 -------Phân tích----------
 1. header
