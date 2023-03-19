@@ -122,9 +122,9 @@
                                 <p class="address-desc">
                                     Praesent tincidunt sed tellus ut rutrum sed vitae justo.
                                 </p>
-                                <a href="" class="address-buy-btn">
+                                <button href="" class="address-buy-btn js-buy-btn">
                                     Buy Tickets
-                                </a>
+                                </button>
                             </div>
                         </div>
                         <div class="address-detail">
@@ -139,9 +139,9 @@
                                 <p class="address-desc">
                                     Praesent tincidunt sed tellus ut rutrum sed vitae justo.
                                 </p>
-                                <a href="" class="address-buy-btn">
+                                <button href="" class="address-buy-btn js-buy-btn">
                                     Buy Tickets
-                                </a>
+                                </button>
                             </div>
                         </div>
                         <div class="address-detail">
@@ -156,9 +156,9 @@
                                 <p class="address-desc">
                                     Praesent tincidunt sed tellus ut rutrum sed vitae justo.
                                 </p>
-                                <a href="" class="address-buy-btn">
+                                <button href="" class="address-buy-btn js-buy-btn">
                                     Buy Tickets
-                                </a>
+                                </button>
                             </div>
                         </div>
                         <div class="clear"></div>
@@ -169,8 +169,8 @@
             
             <!-- end content-tour-dates -->
 
-
-            <div class="content-section">
+            <!-- start contact section -->
+            <div class="content-section contact">
                 <div class="section-heading">
                     CONTACT
                 </div>
@@ -178,18 +178,75 @@
                     Fan? Drop a note!
                 </div>
                
-            </div>
-        </div>
+                <div class="contact-body">
 
-        <div class="footer">
+                    <div class="contact-left">
+
+                        <div class="contact-desc">
+                            <i class="ti-location-arrow"></i>
+                             Chicago, US
+                        </div>
+
+                        <div class="contact-desc">
+                            <i class="ti-headphone"></i>
+                            Phone: +00 151515
+                        </div>
+
+                        <div class="contact-desc">
+                            <i class="ti-email"></i>
+                            Email: mail@mail.com
+                        </div>
+                    </div>
+
+                    <div class="contact-right">
+                        <form action="">
+                            <div class="contact-name-email">
+                                <input type="text" placeholder="NAME" class="input-name" required >
+                                <input type="text" placeholder="EMAIL" class="input-email" required>
+                            </div>
+    
+                            <input type="text" placeholder="MESSAGE" class="input-message" required>
+                            <button class="submit" type="submit">SEND</button>
+                        </form>
+                        
+                    </div>
+                </div>
+
+            </div>
+            <!-- end contact section -->
+            <div class="content-map">
+                <img src="./assets/img/map/map.jpg" alt="" class="map-img">
+            </div>
             
         </div>
+        <!-- end content -->
+
+        <!-- start footer -->
+        <div class="footer">
+
+            <div class="footer-social">
+                <i class="ti-facebook"></i>
+                <i class="ti-instagram"></i>
+                <i class="ti-twitter-alt"></i>
+                <i class="ti-pinterest"></i>
+                <i class="ti-linkedin"></i>
+                <i class="ti-youtube"></i>
+            </div>
+
+            <div class="footer-license">
+                Powered by <a href="https://www.w3schools.com/">w3.css</a> 
+            </div>
+
+        </div>
+        <!-- end footer -->
+
     </div>
+    <!-- end main -->
 
     <!-- start modal-ticket -->
-    <div class="modal">
+    <div class="modal js-modal">
         <div class="modal-container">
-            <div class="icon-close">
+            <div class="icon-close js-modal-close">
                 <i class="ti-close"></i>
             </div>
             <div class="modal-header">
@@ -229,4 +286,36 @@
             </div>
         </div>
     </div>
+     <!-- end modal-ticket -->
+
+     <!-- js -->
+     <script>
+        const btnBuys = document.querySelectorAll('.js-buy-btn')
+        const modal = document.querySelector('.js-modal')
+        const modalContainer = document.querySelector('.modal-container')
+        const modalClose = document.querySelector('.js-modal-close')
+
+        function showModalTickets() {
+            modal.classList.add('open-modal')
+        }
+
+        function hiddenModalTickets() {
+            modal.classList.remove('open-modal')
+            // modal.classList.add('hidden-modal');
+        }
+
+       
+        for (const btnBuy of btnBuys) {
+           btnBuy.addEventListener('click', showModalTickets)
+        }
+
+        modalClose.addEventListener('click', hiddenModalTickets)
+
+        modal.addEventListener('click', hiddenModalTickets)
+
+        modalContainer.addEventListener('click', function(event) {
+            event.stopPropagation()
+        })
+
+     </script>
 </body>
