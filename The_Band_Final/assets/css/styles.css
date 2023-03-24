@@ -39,6 +39,7 @@ h1, h2, h3, h4, h5, h6 {
     position: fixed;
     top: 0;
     z-index: 1;
+    
 }
 
 .header-menu {
@@ -103,6 +104,14 @@ h1, h2, h3, h4, h5, h6 {
     background-color: #ccc;
 }
 
+.icon-menu {
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: none;
+}
+
+.icon-menu,
 .header-search {
     float: right;
     padding: 12px 24px;
@@ -115,11 +124,19 @@ h1, h2, h3, h4, h5, h6 {
     cursor: pointer;
 }
 
+.icon-menu,
 .header-search .ti-search {
     color: #fff;
     font-weight: 600;
 }
 
+.header .icon-menu:hover {
+    background-color: #ccc;
+}
+
+.header .icon-menu:hover .ti-menu {
+    color: #000;
+}
 /* end header */
 
 /* start slider */
