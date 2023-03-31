@@ -1,0 +1,47 @@
+
+/* css Chung */
+
+:root {
+    --white-color: #fff;
+    --black-color: #000;
+    --text-color: #333;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: inherit;
+    font-size: 1.4rem;
+}
+
+html {
+    font-size: 62.5%;
+    line-height: 1.6rem;
+    font-family: Roboto-Regular;
+    box-sizing: border-box;
+}
+
+body {
+
+}
+
+@font-face {
+    font-family: Roboto-Regular;
+    src: url(../font/font-family/Roboto-Regular.ttf);
+}
+
+@font-face {
+    font-family: Roboto-Medium;
+    src: url(../font/font-family/Roboto-Medium.ttf);
+}
+
+@font-face {
+    font-family: Roboto-Bold;
+    src: url(../font/font-family/Roboto-Bold.ttf);
+}
+
+@font-face {
+    font-family: Roboto-Italic;
+    src: url(../font/font-family/Roboto-Italic.ttf);
+}
+
